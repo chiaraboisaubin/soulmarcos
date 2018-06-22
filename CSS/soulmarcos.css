@@ -10,7 +10,9 @@ $ background-color: ##EDEDED;
     box-sizing: border-box;
 }
 
-body{
+body, html{
+margin:0;
+padding:0;
 background-color: #ffffff;
 font-family: 'Noto Sans', sans-serif;
 font-weight: lighter;
@@ -32,21 +34,26 @@ h1{
 header{
     overflow: hidden;
     background-color: rgba(166,159,158,.09);
-    padding: 1%;
+
 }
 header a{
   padding: 12px auto;
 }
-
-.topnav a:hover {
-  animation-duration: 1s;
-  animation-name: hu;
-  color: orange;
+header .zero{
+  margin: auto;
+  width: 6%;
 }
+
+.topnav a:hover{
+  color: orange;
+  -webkit-transition: .5s;
+  box-shadow: 0px 0px 0px 2px orange;
+}
+
 .topnav{
   padding: 0 auto;
-  margin-left: 35%;
-  word-spacing: 20px;
+  margin-left: 33%;
+  word-spacing: 30px;
 }
 .topnav a{
   color: #540600;
@@ -57,17 +64,34 @@ header a{
   color: #540600;
   font-size: 50px;
   margin-bottom: 10px;
-  margin-left: 35%;
+  margin-right: 5%;
+}
+.icon:hover{
+  color: orange;
+  -webkit-transition: 3s;
+
 }
 .recen{
   display: flex;
-  flex: auto;
+  flex-wrap: wrap;
 }
 .music{
-  flex: 50%;
-  max-width: 30%;
+  flex: 20%;
+  max-width: 50%;
   padding: 0 50px;
   margin: 1%;
+}
+.music2{
+  flex: 50%;
+  width: 50%;
+  padding: 0 50px;
+  margin: 1%
+}
+.music3{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  margin-left: 5%;
 }
 .music img{
   width: 100%;
@@ -90,6 +114,15 @@ footer li{
    padding: 14px 16px;
    margin: auto;
  }
+footer img:hover{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    1% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
 
   button, button a:visited {
    border: none;
@@ -100,13 +133,83 @@ footer li{
    color: #ffffff;
    text-decoration: none;
  }
+ button:hover {
+   color: orange;
+   -webkit-transition: .5s;
+   box-shadow: 0px 0px 0px 2px orange;
+ }
+ .button{
+   margin: auto;
+   width: 18%;
+ }
+ .social{
+   background-color: #540600;
+   padding: 50%;
+ }
+ .hu{
+   padding: 40px;
+   background-color: orange;
+   margin: 5%;
+   text-align: center;
+}
 
-  @media screen and (max-width: 800px) {
+.music3 a{
+      color: #ffffff;
+      margin-right: 20%;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+ }
+ .hu:hover{
+      background-color: #540600;
+       -webkit-transition: 1s;
+        animation: pulse 5s infinite;
+
+ }
+ @keyframes pulse {
+  0% {
+    background-color: #540600;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+ @media screen and (max-width: 820px) {
+   .topnav{
+     margin-left: 29%;
+   }
+     footer ul{
+       margin-left: 30%;
+     }
+
+ }
+
+@media screen and (max-width: 800px) {
+  .topnav{
+    margin-left: 28%;
+  }
     footer ul{
       margin-left: 30%;
     }
+  .button{
+      margin: auto;
+      width: 30%;
+    }
+    header .zero{
+      width: 7%;
+
+    }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 770px) {
+  .topnav{
+    margin-left: 25%;
+  }
+  footer ul{
+    margin-left: 27%;
+  }
+
+}
+@media screen and (max-width: 650px) {
   .topnav{
     margin-left: 25%;
   }
@@ -116,11 +219,29 @@ footer li{
 }
 
 @media screen and (max-width: 600px) {
+  .music{
+    flex: 100%;
+    max-width: 60%;
+    margin-left: 20%;
+  }
+  .music2{
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 5%
 
+  }
+  .button{
+    margin: auto;
+    width: 25%;
+  }
 }
 @media only screen and (max-width:580px){
+  header .zero{
+    width: 10%;
+
+  }
   footer ul{
-    margin-left: 20%;
+    margin-left: 25%;
   }
 
     .topnav a {display: none;}
@@ -139,24 +260,51 @@ footer li{
       display: block;
       text-align: center;
     }
-    .music{
-      flex: 100%;
-      max-width: 100%;
+    .topnav a:hover {
+      color: orange;
+      -webkit-transition: .5s;
+      box-shadow: 0px 0px 0px 0px orange;
     }
+
     .topnav{
       margin-left: 0;
     }
+  h1{
+    margin-left: 30%;
+  }
+  .music3{
+    flex: 100%;
+    max-width: 100%;
+    margin-right: 20%;
+  }
+.button{
+    margin: auto;
+    width: 50%;
+  }
+
 }
 .events p{
   margin: 10%;
   font-family: 'Montserrat', sans-serif;
 }
-@media only screen and (max-width:540px){
 
+@media only screen and (max-width:540px){
+  footer ul{
+    margin-left: 20%;
+  }
 }
 @media only screen and (max-width:480px){
+
+  .music{
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 2%;
+  }
   footer ul{
     margin-left: 15%;
+  }
+  h1{
+    margin-left: 20%;
   }
 }
 @media only screen and (max-width:411px){
@@ -165,16 +313,16 @@ footer li{
   }
 
 }
-@media only screen and (max-width:375px){
+@media only screen and (max-width:380px){
 
 footer ul{
-  margin-left: 2%;
+  margin-left: 5%;
 }
 }
 @media only screen and (max-width:320){
 
 footer ul{
-  margin-left: 1%;
+  margin-left: 3%;
 }
 }
 @media only screen and (max-width: 312px){
