@@ -282,10 +282,10 @@ footer img:hover{
     width: 50%;
   }
 
-}
 .events p{
   margin: 10%;
   font-family: 'Montserrat', sans-serif;
+}
 }
 
 @media only screen and (max-width:540px){
