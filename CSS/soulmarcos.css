@@ -30,12 +30,12 @@ li{
 h1{
   color: #540600;
   font-size: 40px;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Encode Sans Condensed', sans-serif;
   text-align: center;
 }
 header{
     overflow: hidden;
-    background-color: rgba(166,159,158,.09);
+     background-color: rgba(166,159,158,.09);
 }
 header a{
   padding: 12px auto;
@@ -115,18 +115,17 @@ img{
 
 footer ul{
   list-style-type: none;
-  margin-left: 36%;
   padding: 0;
   overflow: hidden;
+  position:fixed;
+
 }
-footer li{
-  float: left;
-}
+
  footer a{
    display: block;
    text-align: center;
    padding: 14px 16px;
-   margin: auto;
+
  }
 footer img:hover{
     -webkit-animation: mover 1s infinite  alternate;
@@ -141,8 +140,8 @@ footer img:hover{
   button, button a:visited {
    border: none;
    background-color: #540600;
-   padding: 10px;
-   border-radius: 20px;
+   padding: 2% 10% 2% 10%;
+   border-radius: 40px;
    display: inline-block;
    color: #ffffff;
    text-decoration: none;
@@ -156,7 +155,7 @@ footer img:hover{
  }
 
  .button{
-   margin-left: 42%;
+   margin-left: 45%;
 
  }
  .social{
@@ -198,6 +197,7 @@ footer img:hover{
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid;
 }
 
 .overlay {
@@ -239,27 +239,23 @@ footer img:hover{
     background-color: #FF4136;
   }
 }
- @media screen and (max-width: 950pc) {
-footer ul{
-  margin-left: 34%;
-}
+ @media screen and (max-width: 980px) {
+
+    .button{
+      margin-left: 41%;
+
+    }
 }
  @media screen and (max-width: 820px) {
    .topnav{
      margin-left: 33%;
    }
-     footer ul{
-       margin-left: 30%;
-     }
 
  }
 
 @media screen and (max-width: 800px) {
     .topnav{
       margin-left: 31%;
-    }
-    footer ul{
-      margin-left: 30%;
     }
 
     header .zero{
@@ -271,20 +267,16 @@ footer ul{
   .topnav{
     margin-left: 30%;
   }
-  footer ul{
-    margin-left: 27%;
-  }
-
+  .button{
+    margin-left: 42%;
 }
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 680px) {
   .topnav{
     margin-left: 27%;
   }
-  footer ul{
-    margin-left: 25%;
-  }
+
   .button{
-    margin-left: 39%;
+    margin-left: 36%;
 
   }
 }
@@ -308,9 +300,6 @@ footer ul{
     width: 10%;
 
   }
-  footer ul{
-    margin-left: 25%;
-  }
 
     .topnav a {display: none;}
     .topnav a.icon {
@@ -333,6 +322,8 @@ footer ul{
       -webkit-transition: .5s;
       box-shadow: 0px 0px 0px 0px orange;
     }
+    h1{
+      font-size: 35px;}
 
     .topnav{
       margin-left: 0;
@@ -342,7 +333,10 @@ footer ul{
     flex: 100%;
     max-width: 100%;
   }
+  .button{
+    margin-left: 35%;
 
+  }
 
 .events p{
   margin: 10%;
@@ -351,9 +345,7 @@ footer ul{
 }
 
 @media only screen and (max-width:540px){
-  footer ul{
-    margin-left: 20%;
-  }
+
 }
 @media only screen and (max-width:480px){
 
@@ -362,31 +354,25 @@ footer ul{
     max-width: 100%;
     margin-left: 2%;
   }
-  footer ul{
-    margin-left: 15%;
-  }
+
 }
 @media only screen and (max-width:411px){
-  footer ul{
-    margin-left: 10%;
-  }
+  h1{
+    font-size: 30px;}
+    .button{
+      margin-left: 30%;
 
+    }
 }
 @media only screen and (max-width:380px){
 
-footer ul{
-  margin-left: 5%;
-}
 }
 @media only screen and (max-width:320){
-
-footer ul{
-  margin-left: 3%;
-}
+  h1{
+    font-size: 25px;}
 }
 @media only screen and (max-width: 312px){
-
-footer ul{
-  margin-left: 0;
+  h1{
+    font-size: 15px;}
 }
 }
