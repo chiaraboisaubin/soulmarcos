@@ -31,7 +31,7 @@ li{
 h1{
   color: #540600;
   font-size: 40px;
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'Sedgwick Ave Display', cursive;
   text-align: center;
 }
 header{
@@ -88,7 +88,7 @@ img{
 }
 .recen h1{
   font-size: 40px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Sedgwick Ave Display', cursive;
   font-weight: bold;
 }
 .music{
@@ -257,6 +257,10 @@ footer img:hover{
     background-color: #FF4136;
   }
 }
+.events p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
  @media screen and (max-width: 980px) {
 
     .button{
@@ -346,10 +350,7 @@ footer img:hover{
 
   }
 
-.events p{
-  margin: 10%;
-  font-family: 'Montserrat', sans-serif;
-}
+
 }
 
 @media only screen and (max-width:540px){
