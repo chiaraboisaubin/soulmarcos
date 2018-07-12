@@ -20,20 +20,8 @@ font-family: 'Noto Sans', sans-serif;
 font-weight: lighter;
 
 }
-a{
 
-  font: 'Tajawal', sans-serif;
-  font-size: 24px;
-}
-li{
-    list-style-type: none;
-}
-h1{
-  color: #540600;
-  font-size: 40px;
-  font-family: 'Sedgwick Ave Display', cursive;
-  text-align: center;
-}
+/* for the header and topnav */
 header{
     overflow: hidden;
      background-color: rgba(166,159,158,.09);
@@ -47,15 +35,6 @@ text-decoration: none;
 header .zero{
   margin: auto;
 
-}
-p{
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-}
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .topnav a:hover{
   color: orange;
@@ -82,6 +61,32 @@ img{
   -webkit-transition: 3s;
 
 }
+/* default for the links, lists, and headers */
+a{
+
+  font: 'Tajawal', sans-serif;
+  font-size: 24px;
+}
+li{
+    list-style-type: none;
+}
+h1{
+  color: #540600;
+  font-size: 40px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* The gallery that will */
 .recen{
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +96,7 @@ img{
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: bold;
 }
+/* for the list of beats that will be added when  the DJ will add wehn  he wamts to show it */
 .music{
   flex: 25%;
   max-width: 50%;
@@ -121,30 +127,7 @@ img{
   margin: 5%;
 }
 
-footer ul{
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  position:fixed;
-
-}
-
- footer a{
-   display: block;
-   text-align: center;
-   padding: 14px 16px;
-
- }
-footer img:hover{
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-
-@-webkit-keyframes mover {
-    1% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
+/* default for the button */
  .button, .button:visited {
    border: none;
    background-color: #540600;
@@ -170,15 +153,16 @@ footer img:hover{
    margin-left: 36%;
    text-decoration: none;
  }
- .social{
-   background-color: #540600;
-   padding: 50%;
- }
+
+ /* When there are events, this is the box that shows */
  .hu{
    padding: 40px;
    background-color: orange;
    margin: 5%;
    text-align: center;
+   height: 100%;
+   width: 100%;
+   display: block;
 }
 
 .music3 a{
@@ -261,6 +245,32 @@ footer img:hover{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  position:fixed;
+
+}
+
+ footer a{
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+
+ }
+footer img:hover{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+/* animation for the the footer */
+@-webkit-keyframes mover {
+    1% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
  @media screen and (max-width: 980px) {
 
     .button{
@@ -312,7 +322,7 @@ footer img:hover{
     width: 10%;
 
   }
-
+/* when the topnav is at 500px, it will turn in to a dropdown nav */
     .topnav a {display: none;}
     .topnav a.icon {
       float: right;
@@ -349,7 +359,6 @@ footer img:hover{
     margin-left: 29%;
 
   }
-
 
 }
 
